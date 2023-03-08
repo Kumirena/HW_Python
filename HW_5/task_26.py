@@ -12,6 +12,6 @@ B=int(input("Введите число B:"))
 def degree(A, B):
     if B == 0:
         return 1
-    return A ** B
+    return A * degree(A, B - 1)
  
 print(degree(A, B))
